@@ -10,8 +10,8 @@
         <attr name="main_circle_disable_color" format="color" />
         <attr name="indicator_color" format="color" />
         <attr name="indicator_disable_color" format="color" />
-        <attr name="progress_primary_color" format="color" />
-        <attr name="progress_primary_disable_color" format="color" />
+        <attr name="progress_primary_left_color" format="color" />
+        <attr name="progress_primary_right_color" format="color" />
         <attr name="progress_secondary_color" format="color" />
         <attr name="progress_secondary_disable_color" format="color" />
         <attr name="label_size" format="dimension" />

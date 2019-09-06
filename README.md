@@ -11,6 +11,27 @@ dependencies {
 }
 ```
 
+## 双向异色
+
+本 Fork 实现了双向异色的 Primary 指示器。新增属性 `progress_primary_left_color`、`progress_primary_right_color`，同时增加了相应的 `set` 和 `get` 函数。删除原有的 `progressPrimaryColor` 以及 `progressPrimaryDisabledColor`。
+
+依赖变为（`Tag` 替换为具体的标签）：
+
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+```gradle
+dependencies {
+    implementation 'com.github.upupming:Croller:Tag'
+}
+```
+
 ### XML
 ```xml
 <com.sdsmdg.harjot.crollerTest.Croller
@@ -81,31 +102,31 @@ Croller croller.setOnCrollerChangeListener(new OnCrollerChangeListener() {
 
 <img src = "/screens/croller_attributes.png"><br>
 
-XML Attribute | Java set method | Functionality
------------- | ------------- | ------------- 
-anticlockwise | setAntiClockwise(boolean anticlockwise) | Set the direction of rotation
-progress | setProgress(int progress) | Set the current progress of the seekbar
-label | setLabel(String str) | Set the label
-label_size | setLabelSize(int size) | Set the label size
-label_color | setLabelColor(int color) | Set the label color
-is_continuous | setIsContinuous(boolean bool) | Set whether seekbar is conitnuous or discrete
-max | setMax(int max) | Set the maximum value of the seekbar
-min | setMin(int min) | Set the minimum value of the seekbar (Default is **1**)
-start_offset | setStartOffset(int offset) | Set the seekbar start offset angle from bottom horizontal center
-sweep_angle | setSweepAngle(int angle) | Set the total angle covered by the seekbar
-progress_primary_stroke_width | setProgressPrimaryStrokeWidth(float width) | Set the primary progress thickness for continuous type
-progress_secondary_stroke_width | setProgressSecondaryStrokeWidth(float width) | Set the secondary progress thickness for continuous type
-progress_primary_circle_size | setProgressPrimaryCircleSize(float size) | Set the primary progress circle size for discrete type
-progress_secondary_circle_size | setProgressSecondaryCircleSize(float size) | Set the secondary progress circle size for discrete type
-indicator_width  | setIndicatorWidth(float width) | Set the progress indicator width
-indicator_color | setIndicatorColor(int color) | Set the progress indicator color
-progress_primary_color | setProgressPrimaryColor(int color) | Set the progress primary(active) color
-progress_secondary_color | setProgressSecondaryColor(int color) | Set the progress secondary(inactive) color
-progress_radius | setProgressRadius(float radius) | Set the radius of the progress arc
-main_circle_radius | setMainCircleRadius(float radius) | Set the main(front) circle radius
-back_circle_radius | setBackCircleRadius(float radius) | Set the back circle radius
-main_circle_color | setMainCircleColor(int color) | Set the main(front) circle color
-back_circle_color | setBackCircleColor(int color) | Set the back circle color
+| XML Attribute                   | Java set method                              | Functionality                                                    |
+| ------------------------------- | -------------------------------------------- | ---------------------------------------------------------------- |
+| anticlockwise                   | setAntiClockwise(boolean anticlockwise)      | Set the direction of rotation                                    |
+| progress                        | setProgress(int progress)                    | Set the current progress of the seekbar                          |
+| label                           | setLabel(String str)                         | Set the label                                                    |
+| label_size                      | setLabelSize(int size)                       | Set the label size                                               |
+| label_color                     | setLabelColor(int color)                     | Set the label color                                              |
+| is_continuous                   | setIsContinuous(boolean bool)                | Set whether seekbar is conitnuous or discrete                    |
+| max                             | setMax(int max)                              | Set the maximum value of the seekbar                             |
+| min                             | setMin(int min)                              | Set the minimum value of the seekbar (Default is **1**)          |
+| start_offset                    | setStartOffset(int offset)                   | Set the seekbar start offset angle from bottom horizontal center |
+| sweep_angle                     | setSweepAngle(int angle)                     | Set the total angle covered by the seekbar                       |
+| progress_primary_stroke_width   | setProgressPrimaryStrokeWidth(float width)   | Set the primary progress thickness for continuous type           |
+| progress_secondary_stroke_width | setProgressSecondaryStrokeWidth(float width) | Set the secondary progress thickness for continuous type         |
+| progress_primary_circle_size    | setProgressPrimaryCircleSize(float size)     | Set the primary progress circle size for discrete type           |
+| progress_secondary_circle_size  | setProgressSecondaryCircleSize(float size)   | Set the secondary progress circle size for discrete type         |
+| indicator_width                 | setIndicatorWidth(float width)               | Set the progress indicator width                                 |
+| indicator_color                 | setIndicatorColor(int color)                 | Set the progress indicator color                                 |
+| progress_primary_color          | setProgressPrimaryColor(int color)           | Set the progress primary(active) color                           |
+| progress_secondary_color        | setProgressSecondaryColor(int color)         | Set the progress secondary(inactive) color                       |
+| progress_radius                 | setProgressRadius(float radius)              | Set the radius of the progress arc                               |
+| main_circle_radius              | setMainCircleRadius(float radius)            | Set the main(front) circle radius                                |
+| back_circle_radius              | setBackCircleRadius(float radius)            | Set the back circle radius                                       |
+| main_circle_color               | setMainCircleColor(int color)                | Set the main(front) circle color                                 |
+| back_circle_color               | setBackCircleColor(int color)                | Set the back circle color                                        |
 
 # Examples
 <img src = "/screens/croller_example.png">

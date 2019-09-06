@@ -1,7 +1,7 @@
 package com.sdsmdg.harjot.crollerTest;
 
 public interface OnCrollerChangeListener {
-    void onProgressChanged(Croller croller, int progress);
+    void onProgressChanged(Croller croller, int progress, float deg);
 
     void onStartTrackingTouch(Croller croller);
 
