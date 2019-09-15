@@ -28,7 +28,7 @@ allprojects {
 
 ```gradle
 dependencies {
-    implementation 'com.github.upupming:Croller:Tag'
+    implementation 'com.github.upupming:Croller:xmind-0.0.8'
 }
 ```
 
