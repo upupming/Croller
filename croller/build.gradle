@@ -13,7 +13,7 @@ version = '1.0'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "28.0.2"
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         minSdkVersion 16
@@ -33,6 +33,11 @@ android {
     sourceSets {
         main.java.srcDirs += 'src/main/java'
         androidTest.java.srcDirs += 'src/androidTest/java'
+    }
+    tasks.withType(Javadoc) {
+        options.addStringOption('Xdoclint:none', '-quiet')
+        options.addStringOption('encoding', 'UTF-8')
+        options.addStringOption('charSet', 'UTF-8')
     }
 }
 

@@ -17,7 +17,7 @@ dependencies {
 
 依赖变为（`Tag` 替换为具体的标签）：
 
-```gradle
+```groovy
 allprojects {
     repositories {
         ...
@@ -26,9 +26,9 @@ allprojects {
 }
 ```
 
-```gradle
+```groovy
 dependencies {
-    implementation 'com.github.upupming:Croller:xmind-0.0.8'
+    implementation 'com.github.upupming:Croller:xmind-0.0.9'
 }
 ```
 
