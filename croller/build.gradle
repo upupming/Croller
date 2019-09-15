@@ -10,12 +10,12 @@ ext {
 
     libraryDescription = 'A circular seekbar for Android, with a control knob! (for the lack of a better word).'
 
-    siteUrl = 'https://github.com/harjot-oberai/Croller'
-    gitUrl = 'https://github.com/harjot-oberai/Croller.git'
+    siteUrl = 'https://github.com/upupming/Croller'
+    gitUrl = 'https://github.com/upupming/Croller.git'
 
     libraryVersion = '1.0.7'
 
-    developerId = 'harjot-oberai'
+    developerId = 'upupming'
     developerName = 'Harjot Singh Oberai'
     developerEmail = 'harjot.oberai@gmail.com'
 
