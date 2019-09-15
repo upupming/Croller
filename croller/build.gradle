@@ -8,7 +8,7 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 
-group = 'com.github.upupming'
+group = "com.sdsmdg.harjot"
 version = '1.0'
 
 android {
