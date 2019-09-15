@@ -1,4 +1,4 @@
-package com.sdsmdg.harjot.crollerTest.utilities;
+package com.sdsmdg.harjot.croller.utilities;
 
 import android.content.Context;
 import android.content.res.Resources;

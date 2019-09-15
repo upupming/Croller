@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context="com.sdsmdg.harjot.crollerTest.MainActivity">
+    tools:context="com.sdsmdg.harjot.croller.MainActivity">
 
-    <com.sdsmdg.harjot.crollerTest.Croller
+    <com.sdsmdg.harjot.croller.Croller
         android:id="@+id/croller"
         app:enabled="true"
         android:layout_width="match_parent"

@@ -1,4 +1,4 @@
-package com.sdsmdg.harjot.crollerTest;
+package com.sdsmdg.harjot.croller;
 
 public interface OnCrollerChangeListener {
     void onProgressChanged(Croller croller, int progress, float deg);
